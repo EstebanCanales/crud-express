@@ -1,13 +1,13 @@
 import express from "express";
+const router = express.Router();
 import {
 	createItem,
 	deleteItem,
 	getItemById,
 	getItmes,
 	updateItem,
-} from "../controllers/items.controllers";
+} from "../controllers/items.controllers.js";
 
-const router = express.Router();
 
 router.get("/items", getItmes);
 
